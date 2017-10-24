@@ -40,6 +40,10 @@ for(var k = 0; k < storeOne.hours.length; k++) {
 };
 
 function storeOneDom (){ //Adding list to sales.html
+  var containerOne = document.createElement('div');
+  containerOne.innerHTML = '<h2>1st and Pike</h2>';
+  document.body.appendChild(containerOne);
+
   var listOne = document.createElement('ul');
   var listOneArr = [];
 
@@ -48,6 +52,10 @@ function storeOneDom (){ //Adding list to sales.html
   }
   listOne.innerHTML = listOneArr.join('');
   document.body.appendChild(listOne);
+
+  var storeOneTotal = document.createElement('li');
+  storeOneTotal.innerHTML = 'Total cookies sold: ' + dailyTotal[14];
+  document.body.appendChild(storeOneTotal);
 };
 storeOneDom();
 
@@ -91,6 +99,10 @@ for(var n = 0; n < storeTwo.hours.length; n++) {
 };
 
 function storeTwoDom (){ //Adding list to sales.html
+  var containerTwo = document.createElement('div');
+  containerTwo.innerHTML = '<h2>SeaTac Airport</h2>';
+  document.body.appendChild(containerTwo);
+
   var listTwo = document.createElement('ul');
   var listTwoArr = [];
 
@@ -99,6 +111,10 @@ function storeTwoDom (){ //Adding list to sales.html
   }
   listTwo.innerHTML = listTwoArr.join('');
   document.body.appendChild(listTwo);
+
+  var storeTwoTotal = document.createElement('li');
+  storeTwoTotal.innerHTML = 'Total cookies sold: ' + dailyTotalTwo[14];
+  document.body.appendChild(storeTwoTotal);
 };
 storeTwoDom();
 
@@ -142,6 +158,10 @@ for(var q = 0; q < storeThree.hours.length; q++) {
 };
 
 function storeThreeDom (){ //Adding list to sales.html
+  var containerThree = document.createElement('div');
+  containerThree.innerHTML = '<h2>Seattle Center</h2>';
+  document.body.appendChild(containerThree);
+
   var listThree = document.createElement('ul');
   var listThreeArr = [];
 
@@ -150,6 +170,10 @@ function storeThreeDom (){ //Adding list to sales.html
   }
   listThree.innerHTML = listThreeArr.join('');
   document.body.appendChild(listThree);
+
+  var storeThreeTotal = document.createElement('li');
+  storeThreeTotal.innerHTML = 'Total cookies sold: ' + dailyTotalThree[14];
+  document.body.appendChild(storeThreeTotal);
 };
 storeThreeDom();
 
@@ -193,6 +217,10 @@ for(var t = 0; t < storeFour.hours.length; t++) {
 };
 
 function storeFourDom (){ //Adding list to sales.html
+  var containerFour = document.createElement('div');
+  containerFour.innerHTML = '<h2>Capitol Hill</h2>';
+  document.body.appendChild(containerFour);
+
   var listFour = document.createElement('ul');
   var listFourArr = [];
 
@@ -201,6 +229,10 @@ function storeFourDom (){ //Adding list to sales.html
   }
   listFour.innerHTML = listFourArr.join('');
   document.body.appendChild(listFour);
+
+  var storeFourTotal = document.createElement('li');
+  storeFourTotal.innerHTML = 'Total cookies sold: ' + dailyTotalFour[14];
+  document.body.appendChild(storeFourTotal);
 };
 storeFourDom();
 
@@ -244,6 +276,10 @@ for(var w = 0; w < storeFive.hours.length; w++) {
 };
 
 function storeFiveDom (){ //Adding list to sales.html
+  var containerFive = document.createElement('div');
+  containerFive.innerHTML = '<h2>Alki</h2>';
+  document.body.appendChild(containerFive);
+
   var listFive = document.createElement('ul');
   var listFiveArr = [];
 
@@ -252,5 +288,9 @@ function storeFiveDom (){ //Adding list to sales.html
   }
   listFive.innerHTML = listFiveArr.join('');
   document.body.appendChild(listFive);
+
+  var storeFiveTotal = document.createElement('li');
+  storeFiveTotal.innerHTML = 'Total cookies sold: ' + dailyTotalFive[14];
+  document.body.appendChild(storeFiveTotal);
 };
 storeFiveDom();
