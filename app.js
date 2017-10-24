@@ -35,8 +35,8 @@ var dailyTotal = [];
 var total = 0; //this will calculate total cookies sold by end of day
 for(var k = 0; k < storeOne.hours.length; k++) {
   total += Math.floor(storeOne.cookiesEachHour[k]);
-  dailyTotal.push(total);
-  console.log(dailyTotal[14]); //this is the total number of cookies sold
+  dailyTotal.push('<li>Total Cookies sold: ' + total + '</li>');
+  console.log(dailyTotal[dailyTotal.length - 1]); //this is the total number of cookies sold
 };
 
 function storeOneDom (){ //Adding list to sales.html
@@ -50,12 +50,13 @@ function storeOneDom (){ //Adding list to sales.html
   for(var a = 0; a < storeOneHourlyTotals.length; a++) {
     listOneArr.push(storeOneHourlyTotals[a]);
   }
+  listOneArr.push(dailyTotal[dailyTotal.length - 1]);
   listOne.innerHTML = listOneArr.join('');
   document.body.appendChild(listOne);
 
-  var storeOneTotal = document.createElement('li');
-  storeOneTotal.innerHTML = 'Total cookies sold: ' + dailyTotal[14];
-  document.body.appendChild(storeOneTotal);
+  // var storeOneTotal = document.createElement('li');
+  // storeOneTotal.innerHTML = 'Total cookies sold: ' + dailyTotal[14];
+  // document.body.appendChild(storeOneTotal);
 };
 storeOneDom();
 
@@ -95,7 +96,7 @@ var totalTwo = 0; //this will calculate total cookies sold by end of day
 for(var n = 0; n < storeTwo.hours.length; n++) {
   totalTwo += Math.floor(storeTwo.cookiesEachHour[n]);
   dailyTotalTwo.push(totalTwo);
-  console.log(dailyTotalTwo[14]); //this is the total number of cookies sold
+  console.log(dailyTotalTwo[dailyTotalTwo.length - 1]); //this is the total number of cookies sold
 };
 
 function storeTwoDom (){ //Adding list to sales.html
