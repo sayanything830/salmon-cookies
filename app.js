@@ -39,6 +39,18 @@ for(var k = 0; k < storeOne.hours.length; k++) {
   console.log(dailyTotal[14]); //this is the total number of cookies sold
 };
 
+function storeOneDom (){ //Adding list to sales.html
+  var listOne = document.createElement('ul');
+  var listOneArr = [];
+
+  for(var a = 0; a < storeOneHourlyTotals.length; a++) {
+    listOneArr.push(storeOneHourlyTotals[a]);
+  }
+  listOne.innerHTML = listOneArr.join('');
+  document.body.appendChild(listOne);
+};
+storeOneDom();
+
 //store two
 var storeTwo = { //starting with store one
   minCustomer: 3, //min customers, value given in problem domain
@@ -77,6 +89,18 @@ for(var n = 0; n < storeTwo.hours.length; n++) {
   dailyTotalTwo.push(totalTwo);
   console.log(dailyTotalTwo[14]); //this is the total number of cookies sold
 };
+
+function storeTwoDom (){ //Adding list to sales.html
+  var listTwo = document.createElement('ul');
+  var listTwoArr = [];
+
+  for(var b = 0; b < storeTwoHourlyTotals.length; b++) {
+    listTwoArr.push(storeTwoHourlyTotals[b]);
+  }
+  listTwo.innerHTML = listTwoArr.join('');
+  document.body.appendChild(listTwo);
+};
+storeTwoDom();
 
 //store 3
 var storeThree = { //starting with store one
@@ -117,6 +141,19 @@ for(var q = 0; q < storeThree.hours.length; q++) {
   console.log(dailyTotalThree[14]); //this is the total number of cookies sold
 };
 
+function storeThreeDom (){ //Adding list to sales.html
+  var listThree = document.createElement('ul');
+  var listThreeArr = [];
+
+  for(var c = 0; c < storeThreeHourlyTotals.length; c++) {
+    listThreeArr.push(storeThreeHourlyTotals[c]);
+  }
+  listThree.innerHTML = listThreeArr.join('');
+  document.body.appendChild(listThree);
+};
+storeThreeDom();
+
+//store four
 var storeFour = { //starting with store one
   minCustomer: 20, //min customers, value given in problem domain
   maxCustomer: 38, //max customers given in problem domain
@@ -154,6 +191,18 @@ for(var t = 0; t < storeFour.hours.length; t++) {
   dailyTotalFour.push(totalFour);
   console.log(dailyTotalFour[14]); //this is the total number of cookies sold
 };
+
+function storeFourDom (){ //Adding list to sales.html
+  var listFour = document.createElement('ul');
+  var listFourArr = [];
+
+  for(var d = 0; d < storeFourHourlyTotals.length; d++) {
+    listFourArr.push(storeFourHourlyTotals[d]);
+  }
+  listFour.innerHTML = listFourArr.join('');
+  document.body.appendChild(listFour);
+};
+storeFourDom();
 
 //store five
 var storeFive = { //starting with store one
@@ -193,3 +242,15 @@ for(var w = 0; w < storeFive.hours.length; w++) {
   dailyTotalFive.push(totalFive);
   console.log(dailyTotalFive[14]); //this is the total number of cookies sold
 };
+
+function storeFiveDom (){ //Adding list to sales.html
+  var listFive = document.createElement('ul');
+  var listFiveArr = [];
+
+  for(var e = 0; e < storeFiveHourlyTotals.length; e++) {
+    listFiveArr.push(storeFiveHourlyTotals[e]);
+  }
+  listFive.innerHTML = listFiveArr.join('');
+  document.body.appendChild(listFive);
+};
+storeFiveDom();
