@@ -95,7 +95,7 @@ var dailyTotalTwo = [];
 var totalTwo = 0; //this will calculate total cookies sold by end of day
 for(var n = 0; n < storeTwo.hours.length; n++) {
   totalTwo += Math.floor(storeTwo.cookiesEachHour[n]);
-  dailyTotalTwo.push(totalTwo);
+  dailyTotalTwo.push('<li>Total Cookies sold: ' + totalTwo + '</li>');
   console.log(dailyTotalTwo[dailyTotalTwo.length - 1]); //this is the total number of cookies sold
 };
 
@@ -110,12 +110,13 @@ function storeTwoDom (){ //Adding list to sales.html
   for(var b = 0; b < storeTwoHourlyTotals.length; b++) {
     listTwoArr.push(storeTwoHourlyTotals[b]);
   }
+  listTwoArr.push(dailyTotalTwo[dailyTotalTwo.length - 1]);
   listTwo.innerHTML = listTwoArr.join('');
   document.body.appendChild(listTwo);
 
-  var storeTwoTotal = document.createElement('li');
-  storeTwoTotal.innerHTML = 'Total cookies sold: ' + dailyTotalTwo[14];
-  document.body.appendChild(storeTwoTotal);
+  // var storeTwoTotal = document.createElement('li');
+  // storeTwoTotal.innerHTML = 'Total cookies sold: ' + dailyTotalTwo[14];
+  // document.body.appendChild(storeTwoTotal);
 };
 storeTwoDom();
 
@@ -154,8 +155,8 @@ var dailyTotalThree = [];
 var totalThree = 0; //this will calculate total cookies sold by end of day
 for(var q = 0; q < storeThree.hours.length; q++) {
   totalThree += Math.floor(storeThree.cookiesEachHour[q]);
-  dailyTotalThree.push(totalThree);
-  console.log(dailyTotalThree[14]); //this is the total number of cookies sold
+  dailyTotalThree.push('<li>Total Cookies sold: ' + totalThree + '</li>');
+  console.log(dailyTotalThree[dailyTotalThree.length - 1]); //this is the total number of cookies sold
 };
 
 function storeThreeDom (){ //Adding list to sales.html
@@ -169,12 +170,13 @@ function storeThreeDom (){ //Adding list to sales.html
   for(var c = 0; c < storeThreeHourlyTotals.length; c++) {
     listThreeArr.push(storeThreeHourlyTotals[c]);
   }
+  listThreeArr.push(dailyTotalThree[dailyTotalThree.length - 1]);
   listThree.innerHTML = listThreeArr.join('');
   document.body.appendChild(listThree);
 
-  var storeThreeTotal = document.createElement('li');
-  storeThreeTotal.innerHTML = 'Total cookies sold: ' + dailyTotalThree[14];
-  document.body.appendChild(storeThreeTotal);
+  // var storeThreeTotal = document.createElement('li');
+  // storeThreeTotal.innerHTML = 'Total cookies sold: ' + dailyTotalThree[14];
+  // document.body.appendChild(storeThreeTotal);
 };
 storeThreeDom();
 
@@ -213,8 +215,8 @@ var dailyTotalFour = [];
 var totalFour = 0; //this will calculate total cookies sold by end of day
 for(var t = 0; t < storeFour.hours.length; t++) {
   totalFour += Math.floor(storeFour.cookiesEachHour[t]);
-  dailyTotalFour.push(totalFour);
-  console.log(dailyTotalFour[14]); //this is the total number of cookies sold
+  dailyTotalFour.push('<li>Total Cookies sold: ' + totalFour + '</li>');
+  console.log(dailyTotalFour[dailyTotalFour.length - 1]); //this is the total number of cookies sold
 };
 
 function storeFourDom (){ //Adding list to sales.html
@@ -228,12 +230,13 @@ function storeFourDom (){ //Adding list to sales.html
   for(var d = 0; d < storeFourHourlyTotals.length; d++) {
     listFourArr.push(storeFourHourlyTotals[d]);
   }
+  listFourArr.push(dailyTotalFour[dailyTotalFour.length - 1]);
   listFour.innerHTML = listFourArr.join('');
   document.body.appendChild(listFour);
 
-  var storeFourTotal = document.createElement('li');
-  storeFourTotal.innerHTML = 'Total cookies sold: ' + dailyTotalFour[14];
-  document.body.appendChild(storeFourTotal);
+  // var storeFourTotal = document.createElement('li');
+  // storeFourTotal.innerHTML = 'Total cookies sold: ' + dailyTotalFour[14];
+  // document.body.appendChild(storeFourTotal);
 };
 storeFourDom();
 
@@ -272,8 +275,8 @@ var dailyTotalFive = [];
 var totalFive = 0; //this will calculate total cookies sold by end of day
 for(var w = 0; w < storeFive.hours.length; w++) {
   totalFive += Math.floor(storeFive.cookiesEachHour[w]);
-  dailyTotalFive.push(totalFive);
-  console.log(dailyTotalFive[14]); //this is the total number of cookies sold
+  dailyTotalFive.push('<li>Total Cookies sold: ' + totalFive + '</li>');
+  console.log(dailyTotalFive[dailyTotalFive.length - 1]); //this is the total number of cookies sold
 };
 
 function storeFiveDom (){ //Adding list to sales.html
@@ -287,6 +290,7 @@ function storeFiveDom (){ //Adding list to sales.html
   for(var e = 0; e < storeFiveHourlyTotals.length; e++) {
     listFiveArr.push(storeFiveHourlyTotals[e]);
   }
+  listFiveArr.push(dailyTotalFive[dailyTotalFive.length - 1]);
   listFive.innerHTML = listFiveArr.join('');
   document.body.appendChild(listFive);
 
