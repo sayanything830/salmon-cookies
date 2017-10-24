@@ -1,0 +1,25 @@
+/*making things pretty*/
+
+#sales {
+  background: #FFE8C9;
+}
+
+#sales h2{
+  color: #5EA920;
+  font-family: 'Pacifico', cursive;
+}
+
+#sales li {
+  font-family: helvetica;
+  color: #0B568F;
+}
+
+#home {
+  background: #666;
+}
+
+#home h1 {
+  font-family: 'Pacifico', cursive;
+  font-size: 30px;
+  color: #ABD5F6;
+}
