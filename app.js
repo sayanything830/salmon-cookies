@@ -294,8 +294,8 @@ function storeFiveDom (){ //Adding list to sales.html
   listFive.innerHTML = listFiveArr.join('');
   document.body.appendChild(listFive);
 
-  var storeFiveTotal = document.createElement('li');
-  storeFiveTotal.innerHTML = 'Total cookies sold: ' + dailyTotalFive[14];
-  document.body.appendChild(storeFiveTotal);
+  // var storeFiveTotal = document.createElement('li');
+  // storeFiveTotal.innerHTML = 'Total cookies sold: ' + dailyTotalFive[14];
+  // document.body.appendChild(storeFiveTotal);
 };
 storeFiveDom();
