@@ -38,7 +38,6 @@ capitolHill.randomCust();
 alki.randomCust();
 
 //Now adding table to the domain
-var table = document.getElementById('shell');
 var data = ['<td>Store Locations</td>'];
 var storeLocations = [];
 
@@ -49,12 +48,20 @@ storeLocations.push(capitolHill);
 storeLocations.push(alki);
 console.log(storeLocations);
 
-for(var j = 0; j < storeLocations[0].hours; j ++) {
-  data.push(
-    '<td>' + storeLocations[0].hours + '</td>'
-  );
+for(var j = 0; j < storeLocations[0].hours.length; j ++) { //this pulls my hours from my object and turns into a <td> string to create my table header
+  data = data + '<td>' + storeLocations[0].hours[j] + '</td>';
   console.log(data);
 }
+data = data + '<td>Daily Totals</td>';
+console.log(typeof data);
+
+var header = document.createElement('tr');
+header.innerHTML = data;
+console.log(typeof header);
+document.getElementById('table_head').appendChild(header);
+
+
+
 
 
 
