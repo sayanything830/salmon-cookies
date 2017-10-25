@@ -59,15 +59,18 @@ header.innerHTML = data;
 document.getElementById('table_head').appendChild(header);
 
 
+var dataContent = [];
+for(var k = 0; k < storeLocations[0].hours.length; k ++) {
+  dataContent.push(
+    '<td>' + storeLocations[k].cookiesPerHour + '</td>'
+  );
+  console.log(dataContent);
+};
 
+var tableBody = document.createElement('tr');
+tableBody.innerHTML = dataContent;
+document.getElementById('table_content').appendChild(tableBody);
 
-// var dataContent = ['<td>' + storeLocations[].name + '</td>'];
-// for(var k = 0; k < storeLocations[0].hours.length; k ++) {
-//   dataContent.push(
-//     '<td>' + storeLocations[j].cookiesPerHour[i] + '</td>'
-//   );
-// };
-//
 // var newRow = document.createElement('tr');
 // newRow.innerHTML = dataContent.join('');
 // document.getElementById('table_content').appendChild(header);
