@@ -15,11 +15,103 @@
 }
 
 #home {
-  background: #666;
+  font-family: helvetica;
+}
+
+#home header {
+  background: #abd5f6;
+  height: 100px;
+  margin-bottom: 30px;
+}
+
+#home header section img {
+  margin-top:12px;
+  margin-right: 20px;
+  float: left;
+}
+
+#home header section ul {
+  margin: 0 auto;
+}
+
+#home header section li {
+  font-family: 'Pacifico', cursive;
+  color: #2c404c;
+  display: inline-block;
+  margin-top: 45px;
+  margin-right: 80px;
+  font-size: 25px;
+  float: right;
+}
+
+#home section.main_banners {
+  clear:both;
+  text-align: center;
+}
+
+#home .main_banners ul {
+  width: 100%;
+  text-align: center;
+}
+
+#home .main_banners li {
+  display: inline-block;
 }
 
 #home h1 {
   font-family: 'Pacifico', cursive;
+  font-size: 50px;
+  color: #df6063;
+  text-shadow: 1px;
+  margin-top: 30px;
+}
+
+#home h2 {
+  margin-bottom: 90px;
   font-size: 30px;
-  color: #ABD5F6;
+  color: #2c404c;
+}
+
+#home section.features li {
+  float: left;
+  margin-right: 30px;
+  margin-left: 70px;
+  margin-top: 30px;
+  display: inline-block;
+}
+
+#home section.features li:last-child{
+  margin-right: 0;
+}
+
+#home section.store_info {
+  clear: both;
+}
+
+#home section.store_info ul {
+  text-align: center;
+}
+
+#home section.store_info li {
+  display: inline-block;
+  color: #2c404c;
+  margin-left: 50px;
+  margin-right: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-top: 90px;
+  margin-bottom: 30px;
+  float: left;
+  }
+
+#home section.store_info li:last-child {
+  margin-right: 0;
+}
+
+
+#home footer {
+  clear:both;
+  background: #2c404c;
+  color: #abd5f6;
+  padding: 30px;
 }
