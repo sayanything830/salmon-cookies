@@ -62,7 +62,7 @@ function formData(event) {
 
 function createTable(store) {
   var row = document.createElement('tr');
-  var td = store.name + '';
+  var td = '<td>' + store.name + '</td>' + '';
   for (var l = 0; l < store.cookiesPerHour.length; l ++) {
     td = td + '<td>' + store.cookiesPerHour[l] + '</td>';
   }

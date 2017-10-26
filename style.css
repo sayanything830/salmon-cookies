@@ -14,6 +14,28 @@
   color: #0B568F;
 }
 
+#table_content table {
+  margin-left: 20px;
+}
+
+#table_content thead {
+  background: #888;
+}
+
+#table_content td, th {
+  padding: 10px;
+  border: solid 1px #000;
+  font-size: 20px;
+}
+
+td {
+  margin-left: 20px;
+  padding: 20px;
+  border: solid 1px #000;
+  font-size: 20px;
+}
+
+
 #home {
   background: #666;
 }
