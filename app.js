@@ -101,7 +101,7 @@ data = data + '<td>Daily Totals</td>';
 header.innerHTML = data;
 document.getElementById('table_head').appendChild(header);
 
-function createTable (store) {
+function createTable (store) { //created helper function to create table data based on store variables
   var tableBody = document.createElement('tr');
   var tableData = ['<td>' + store.name + '</td>'];
   for(var k = 0; k < store.cookiesPerHour.length; k++) {
@@ -111,7 +111,11 @@ function createTable (store) {
   tableBody.innerHTML = tableData;
   document.getElementById('table_content').appendChild(tableBody);
 }
-createTable();
+createTable(firstAndPike);
+createTable(seaTac);
+createTable(seattleCenter);
+createTable(capitolHill);
+createTable(alki);
 
 // for(var k = 0; k < storeLocations[0].hours.length; k ++) {
 //   dataContent.push(
