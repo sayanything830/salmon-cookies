@@ -50,6 +50,38 @@
   display: inline-block;
 }
 
+#sales form {
+  text-align: center;
+  padding:30px;
+  color: #2c404c;
+}
+
+#sales button {
+  margin-left: 20px;
+  margin-bottom: 20px;
+  margin-top: 30px;
+  background: #2c404c;
+  color: #abd5f6;
+  padding: 8px 18px;
+  border-radius: 3px;
+  border: none;
+  cursor: pointer;
+}
+
+#sales table {
+  margin-left: 10px;
+}
+
+#sales thead {
+  background: #abd5f6;
+}
+
+#sales td, th {
+  padding: 7px;
+  border: solid 1px #000;
+  color: #2c404c;
+}
+
 #home {
   font-family: helvetica;
 }
