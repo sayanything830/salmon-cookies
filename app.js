@@ -2,7 +2,7 @@
 //Putting in forms today
 var form = document.getElementById('store_info');//accessing my form
 var table = document.getElementById('cookie_sales');//accessing table
-// var footer = document.getElementById('footer'); //*** this isn't working properly
+var footer = document.getElementById('footer'); //*** this isn't working properly
 var cookieDataForm = [];
 
 //useing my constructor function
@@ -50,7 +50,7 @@ function formData(event) { //creating event function
   // storeOne.generateCookieSales();
   cookieDataForm.push(storeOne); //moves table data created from createTable function to variable established above
   createTable(storeOne);//calls createTable function
-  //addFooter(storeOne);// addFooter(storeOne); //calls addFooter function, but not currently working
+  addFooter(storeOne);// addFooter(storeOne); //calls addFooter function, but not currently working
   form.reset(); //once submit button has been pressed
 };
 
@@ -67,16 +67,18 @@ function createTable(store) { //helper function to create <td> tags around each 
 form.addEventListener('submit', formData); //calls event function
 
 //***tried to get a table footer working, not adding values properly***
-
-// function addFooter(store) {
-//   var footRow = document.createElement('tr');
-//   var hourTotal = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
-//   var tf = ['<td>Hourly Totals</td>'];
-//   for (var m = 0; m < store.length; m++) {
-//     hourTotal[m] += store[m].cookiesPerHour[m];
-//     tf = tf + '<td>' + hourTotal[m] + '</td>';
-//   };
-//   footRow.innerHTML = tf;
-//   footer.appendChild(footRow);
-//   console.log('hourly total', hourTotal);
-// };
+var hourTotal = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+function addFooter(storeOne) {
+  var footRow = document.createElement('tr');
+  var tf = ['<td>Hourly Totals</td>'];
+  for (var m = 0; m < storeOne.cookiesPerHour.length; m++) {
+    hourTotal[m] += storeOne.cookiesPerHour[m];
+    tf = tf + '<td>' + hourTotal[m] + '</td>';
+    for (var n = 0; storeOne.length; n++) {
+      hourTotal[n] += storeOne[m].cookiesPerHour[m];
+    }
+  };
+  footRow.innerHTML = tf;
+  footer.appendChild(footRow);
+  console.log('hourly total', hourTotal);
+};
