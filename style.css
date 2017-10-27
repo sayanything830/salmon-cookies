@@ -140,6 +140,13 @@
   color: #2c404c;
 }
 
+#home h3 {
+  font-family: 'Pacifico', cursive;
+  font-size: 30px;
+  color: #df6063;
+  margin-bottom: 20px;
+}
+
 #home section.features li {
   float: left;
   margin-right: 30px;
