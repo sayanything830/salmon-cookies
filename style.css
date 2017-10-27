@@ -2,6 +2,33 @@
 
 #sales {
   background: #FFE8C9;
+  font-family: helvetica;
+}
+
+#sales header {
+  background: #abd5f6;
+  height: 100px;
+  margin-bottom: 30px;
+}
+
+#sales header section img {
+  margin-top:12px;
+  margin-right: 20px;
+  float: left;
+}
+
+#sales header section ul {
+  margin: 0 auto;
+}
+
+#sales header section li {
+  font-family: 'Pacifico', cursive;
+  color: #2c404c;
+  display: inline-block;
+  margin-top: 45px;
+  margin-right: 80px;
+  font-size: 25px;
+  float: right;
 }
 
 #sales h2{
@@ -12,6 +39,15 @@
 #sales li {
   font-family: helvetica;
   color: #0B568F;
+}
+
+#sales .main_banners ul {
+  width: 100%;
+  text-align: center;
+}
+
+#sales .main_banners li {
+  display: inline-block;
 }
 
 #home {
