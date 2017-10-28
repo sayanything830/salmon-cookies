@@ -18,9 +18,49 @@
         </section>
       </header>
 
-      <main>
-
-      </main>
+      <form id="store_info">
+        <fieldset>
+          <label for="store">Store Name:</label>
+          <input type="text" name="store" placeholder="enter store name" required>
+        </fieldset>
+        <fieldset>
+          <label for="min_customers">Minimum Custmers:</label>
+          <input type="text" name="min_customers" placeholder="enter minimum customers" required>
+        </fieldset>
+        <fieldset>
+          <label for="max_customers">Maximum Customers:</label>
+          <input type="text" name="max_customers" required>
+        </fieldset>
+        <fieldset>
+          <label for="avg_cook_sales">Average Cookie Sales:</label>
+          <input type="text" name="avg_cook_sales" required>
+        </fieldset>
+        <button  id="submit_button" type="submit">Add Store</button>
+      </form>
+      <section id="cookie_sales">
+        <table>
+          <thead>
+            <th>Store Name</th>
+            <th>6am sales</th>
+            <th>7am sales</th>
+            <th>8am sales</th>
+            <th>9am sales</th>
+            <th>10am sales</th>
+            <th>11am sales</th>
+            <th>12pm sales</th>
+            <th>1pm sales</th>
+            <th>2pm sales</th>
+            <th>3pm sales</th>
+            <th>4pm sales</th>
+            <th>5pm sales</th>
+            <th>6pm sales</th>
+            <th>7pm sales</th>
+            <th>8pm sales</th>
+            <th>Daily Total</th>
+          </thead>
+        <tbody id="table_content"></tbody>
+      <!-- table content dynamically created in JS-->
+        </table>
     <script src="app.js"></script>
   </body>
 </html>
