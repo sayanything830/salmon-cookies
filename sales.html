@@ -22,36 +22,38 @@
         </section>
       </header>
 
+    <main>
       <section class="main_banners">
         <ul>
           <li>
             <img src="images/salmon.png">
           </li>
           <li>
-            <img src="images/chinook.jpg">
+            <img src="images/chinook_transparent_alpha.png">
           </li>
         </ul>
       </section>
-
-      <form id="store_info">
-        <fieldset>
-          <label for="store">Store Name:</label>
-          <input type="text" name="store" placeholder="enter store name" required>
-        </fieldset>
-        <fieldset>
-          <label for="min_customers">Minimum Custmers:</label>
-          <input type="text" name="min_customers" placeholder="enter minimum customers" required>
-        </fieldset>
-        <fieldset>
-          <label for="max_customers">Maximum Customers:</label>
-          <input type="text" name="max_customers" required>
-        </fieldset>
-        <fieldset>
-          <label for="avg_cook_sales">Average Cookie Sales:</label>
-          <input type="text" name="avg_cook_sales" required>
-        </fieldset>
-        <button  id="submit_button" type="submit">Add Store</button>
-      </form>
+      <section>
+        <form id="store_info">
+            <fieldset>
+              <label for="store">Store Name:</label>
+              <input type="text" name="store" placeholder="enter store name" required>
+            </fieldset>
+            <fieldset>
+              <label for="min_customers">Minimum Custmers:</label>
+              <input type="text" name="min_customers" placeholder="enter minimum customers" required>
+            </fieldset>
+            <fieldset>
+              <label for="max_customers">Maximum Customers:</label>
+              <input type="text" name="max_customers" required>
+            </fieldset>
+            <fieldset>
+              <label for="avg_cook_sales">Average Cookie Sales:</label>
+              <input type="text" name="avg_cook_sales" required>
+            </fieldset>
+          <button  id="submit_button" type="submit">Add Store</button>
+        </form>
+      </section>
       <section>
         <table id="cookie_sales">
           <thead>
@@ -81,6 +83,7 @@
           </tbody>
         </table>
       </section>
+    </main>
     <script src="app.js"></script>
   </body>
 </html>
