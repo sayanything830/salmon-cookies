@@ -1,17 +1,108 @@
 /*making things pretty*/
 
-#sales {
-  background: #FFE8C9;
+header {
+  background: #2c404c;
+  height: 100px;
+  margin-bottom: 30px;
 }
 
-#sales h2{
+header section img {
+  margin-top: 10px;
+  margin-left: 40px;
+  float: left;
+}
+
+header section ul {
+  margin: 0 auto;
+}
+
+header section li {
+  font-family: 'Pacifico', cursive;
+  color: #df6063;
+  display: inline-block;
+  margin-top: 45px;
+  margin-right: 80px;
+  font-size: 25px;
+  float: right;
+}
+
+header h2{
   color: #5EA920;
   font-family: 'Pacifico', cursive;
 }
 
-#sales li {
+#sales {
+  background: #FFE8C9;
   font-family: helvetica;
-  color: #0B568F;
+}
+
+#sales main {
+  width: 960px;
+  margin: 0 auto;
+}
+
+#sales .main_banners img {
+
+}
+
+#sales .main_banners ul {
+  text-align: center;
+}
+
+#sales .main_banners li {
+  display: inline-block;
+  float: left;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+#sales form {
+  text-align: center;
+  padding: 30px;
+  color: #2c404c;
+  font-size: 25px;
+}
+
+#sales fieldset {
+  background: #b5444780;
+  padding: 10px;
+  margin-right: 200px;
+  margin-left: 200px;
+  }
+
+#sales button {
+  margin-left: 20px;
+  margin-bottom: 20px;
+  margin-top: 30px;
+  background: #2c404c;
+  color: #abd5f6;
+  padding: 8px 18px;
+  border-radius: 3px;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+#sales table {
+  margin-bottom: 50px;
+}
+
+#sales thead {
+  background: #abd5f6;
+}
+
+#sales td, th {
+  padding: 7px;
+  border: solid 1px #000;
+  color: #2c404c;
+}
+
+#sales footer {
+  clear:both;
+  background: #2c404c;
+  color: #df6063;
+  padding: 30px;
+  bottom: 0;
 }
 
 #table_content table {
@@ -37,11 +128,228 @@ td {
 
 
 #home {
-  background: #666;
+  font-family: helvetica;
+  background:#abd5f6
+}
+
+#home header {
+  background: #2c404c;
+    height: 100px;
+    margin-bottom: 30px;
+}
+
+#home main {
+  width: 960px;
+  margin: 0 auto;
+}
+
+#home section.main_banners {
+  text-align: center;
+  position: relative;
+}
+
+#home .main_banners ul {
+  width: 100%;
+}
+
+#home .main_banners li {
+  display: inline-block;
+  float: left;
+  margin-bottom: 30px;
+  margin-top: 50px;
+  opacity: 0.5;
 }
 
 #home h1 {
   font-family: 'Pacifico', cursive;
+  font-size: 55px;
+  color: #b54447;
+  width: 100%;
+  text-shadow: 2px 1px 5px #fbfbfb;
+  margin-top: 168px;
+  position: absolute;
+}
+
+#home h2 {
+  margin-bottom: 90px;
   font-size: 30px;
-  color: #ABD5F6;
+  color: #2c404c;
+}
+
+#home h3 {
+  font-family: 'Pacifico', cursive;
+  font-size: 30px;
+  color: #b54447;
+  margin-bottom: 20px;
+}
+
+#home section.features li {
+  float: left;
+  margin-right: 0px;
+  margin-left: 0px;
+  margin-top: 30px;
+  position: relative;
+  text-align: center;
+}
+
+#home section.features li:first-child{
+  margin-left: 80px;
+}
+
+#home div.family-image {
+  background-image: url(images/family.jpg);
+  height: 200px;
+  width: 200px;
+  transition: 350ms all;
+}
+
+#home div.family-image:hover {
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(images/family.jpg);
+  }
+
+#home div.family-image span.about {
+  display: none;
+}
+
+#home div.family-image:hover span.about {
+  display: block;
+}
+
+#home div.cutter {
+  background-image: url(images/cutter.jpeg);
+  height: 200px;
+  width: 200px;
+  transition: 350ms all;
+}
+
+#home div.cutter:hover {
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(images/cutter.jpeg);
+  }
+
+#home div.cutter span.tour {
+  display: none;
+}
+
+#home div.cutter:hover span.tour {
+  display: block;
+}
+
+#home div.frosted {
+  background-image: url(images/frosted-cookie.jpg);
+  height: 200px;
+  width: 200px;
+  transition: 350ms all;
+}
+
+#home div.frosted:hover {
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(images/frosted-cookie.jpg);
+  }
+
+#home div.frosted span.hiring {
+  display: none;
+}
+
+#home div.frosted:hover span.hiring {
+  display: block;
+}
+
+
+#home div.shirt {
+  background-image: url(images/shirt.jpg);
+  height: 200px;
+  width: 200px;
+  transition: 350ms all;
+}
+
+#home div.shirt:hover {
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(images/shirt.jpg);
+  }
+
+#home div.shirt span.merch {
+  display: none;
+}
+
+#home div.shirt:hover span.merch {
+  display: block;
+}
+
+#home section.features span {
+  clear:both;
+  position:absolute;
+  top: 0;
+  left: 0;
+  font-size: 25px;
+  width: 200px;
+  color: #fff;
+  margin-top: 100px;
+}
+
+#home section.store_info {
+  clear: both;
+}
+
+#home section.store_info ul {
+  text-align: center;
+}
+
+#home section.store_info li {
+  display: inline-block;
+  color: #2c404c;
+  margin-left: 40px;
+  margin-right: 40px;
+  padding-left: 0;
+  padding-right: 0;
+  margin-top: 90px;
+  margin-bottom: 30px;
+  float: left;
+}
+
+#home section.store_info li:last-child {
+  margin-right: 0;
+}
+
+#home section.store_info li:first-child {
+  margin-left:80px;
+}
+
+#home section.store_info li p {
+  padding-top: 10px;
+}
+
+#home section.store_info li fieldset {
+  padding-top: 10px;
+}
+
+#home section.store_info li button {
+  margin-top: 10px;
+  background: #2c404c;
+  color: #df6063;
+  padding: 8px 18px;
+  border-radius: 3px;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+#home footer {
+  clear:both;
+  background: #2c404c;
+  color: #df6063;
+  padding: 30px;
 }

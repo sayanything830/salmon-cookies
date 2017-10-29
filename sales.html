@@ -2,43 +2,64 @@
 <hmtl>
   <head>
     <title>Salmon Cookies Sales Report</title>
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
   </head>
   <body id="sales">
 
     <header>
         <section>
-          <img src="salmon.png"> <!--this is my icon pic-->
+          <a href="index.html" alt="home">
+            <img src="images/fish.jpg"> <!--this is my icon pic-->
+          </a>
+
           <nav>
             <ul>
-              <li>Home</li>
-              <li>Sales</li>
+              <li>Events</li>
+              <li>About Us</li>
+              <li>Merchandise</li>
             </ul>
           </nav>
         </section>
       </header>
 
-      <form id="store_info">
-        <fieldset>
-          <label for="store">Store Name:</label>
-          <input type="text" name="store" placeholder="enter store name" required>
-        </fieldset>
-        <fieldset>
-          <label for="min_customers">Minimum Custmers:</label>
-          <input type="text" name="min_customers" placeholder="enter minimum customers" required>
-        </fieldset>
-        <fieldset>
-          <label for="max_customers">Maximum Customers:</label>
-          <input type="text" name="max_customers" required>
-        </fieldset>
-        <fieldset>
-          <label for="avg_cook_sales">Average Cookie Sales:</label>
-          <input type="text" name="avg_cook_sales" required>
-        </fieldset>
-        <button  id="submit_button" type="submit">Add Store</button>
-      </form>
-      <section id="cookie_sales">
-        <table>
+    <main>
+      <section class="main_banners">
+        <ul>
+          <li>
+            <img src="images/salmon.png">
+          </li>
+          <li>
+            <img src="images/chinook_transparent_alpha.png">
+          </li>
+        </ul>
+      </section>
+      
+      <section>
+        <form id="store_info">
+            <fieldset>
+              <label for="store">Store Name:</label>
+              <input type="text" name="store" placeholder="enter store name" required>
+            </fieldset>
+            <fieldset>
+              <label for="min_customers">Minimum Custmers:</label>
+              <input type="text" name="min_customers" placeholder="enter min customers" required>
+            </fieldset>
+            <fieldset>
+              <label for="max_customers">Maximum Customers:</label>
+              <input type="text" name="max_customers" placeholder="enter max customers" required>
+            </fieldset>
+            <fieldset>
+              <label for="avg_cook_sales">Average Cookie Sales:</label>
+              <input type="text" name="avg_cook_sales" placeholder="enter avg sales" required>
+            </fieldset>
+          <button  id="submit_button" type="submit">Add Store</button>
+        </form>
+      </section>
+      
+      <section>
+        <table id="cookie_sales">
           <thead>
             <th>Store Name</th>
             <th>6am sales</th>
@@ -58,9 +79,14 @@
             <th>8pm sales</th>
             <th>Daily Total</th>
           </thead>
-        <tbody id="table_content"></tbody>
+          <tbody id="table_content"></tbody>
       <!-- table content dynamically created in JS-->
-        </table>
+      </table>
+      </section>
+    </main>
+    <footer>
+    <p>&copy; 2017 Pat's Salmon Cookies</p>
+    </footer>
     <script src="app.js"></script>
   </body>
 </html>
