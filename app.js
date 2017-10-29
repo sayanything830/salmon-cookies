@@ -15,6 +15,7 @@ function Store(name, minCust, maxCust, avgCookieSales) {
   this.dailyTotal = 0; //total cookies sold each day per store
   this.randNum = []; //randum customer generater
 }
+
 Store.prototype.randomCust = function () {//this function generates a random number to represent customers in the store each hour
   for(var i = 0; i < this.hours.length; i++) { //runs loop for each hour store is open
     this.randNum.push(Math.floor(Math.random() * (this.maxCust - this.minCust + 1) + this.minCust));
