@@ -10,7 +10,9 @@
 
     <header>
         <section>
-          <img src="images/fish.jpg"> <!--this is my icon pic-->
+          <a href="index.html" alt="home">
+            <img src="images/fish.jpg"> <!--this is my icon pic-->
+          </a>
 
           <nav>
             <ul>
@@ -41,15 +43,15 @@
             </fieldset>
             <fieldset>
               <label for="min_customers">Minimum Custmers:</label>
-              <input type="text" name="min_customers" placeholder="enter minimum customers" required>
+              <input type="text" name="min_customers" placeholder="enter min customers" required>
             </fieldset>
             <fieldset>
               <label for="max_customers">Maximum Customers:</label>
-              <input type="text" name="max_customers" required>
+              <input type="text" name="max_customers" placeholder="enter max customers" required>
             </fieldset>
             <fieldset>
               <label for="avg_cook_sales">Average Cookie Sales:</label>
-              <input type="text" name="avg_cook_sales" required>
+              <input type="text" name="avg_cook_sales" placeholder="enter avg sales" required>
             </fieldset>
           <button  id="submit_button" type="submit">Add Store</button>
         </form>
@@ -77,13 +79,12 @@
           </thead>
           <tbody id="table_content"></tbody>
       <!-- table content dynamically created in JS-->
-        </table>
-        <table id="footer">
-          <tbody>
-          </tbody>
-        </table>
+      </table>
       </section>
     </main>
+    <footer>
+    <p>&copy; 2017 Pat's Salmon Cookies</p>
+    </footer>
     <script src="app.js"></script>
   </body>
 </html>

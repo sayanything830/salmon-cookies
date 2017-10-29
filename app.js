@@ -2,7 +2,6 @@
 //Putting in forms today
 var form = document.getElementById('store_info');//accessing my form
 var table = document.getElementById('cookie_sales');//accessing table
-var footer = document.getElementById('footer'); //*** this isn't working properly
 var cookieDataForm = [];
 
 //useing my constructor function
@@ -66,10 +65,9 @@ function createTable(store) { //helper function to create <td> tags around each 
 };
 form.addEventListener('submit', formData); //calls event function
 
-//***tried to get a table footer working, not adding values properly***
+//***footer is adding row under each entry, not one only at bottom of table***
 var hourTotal = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
 function addFooter(storeOne) {
-  var footRow = document.createElement('tr');
   var tf = ['<td>Hourly Totals</td>'];
   for (var m = 0; m < storeOne.cookiesPerHour.length; m++) {
     hourTotal[m] += storeOne.cookiesPerHour[m];
@@ -78,7 +76,8 @@ function addFooter(storeOne) {
       hourTotal[n] += storeOne[m].cookiesPerHour[m];
     }
   };
+  var footRow = document.createElement('tr');
   footRow.innerHTML = tf;
-  footer.appendChild(footRow);
+  table.appendChild(footRow);
   console.log('hourly total', hourTotal);
 };

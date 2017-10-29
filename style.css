@@ -41,11 +41,6 @@ header h2{
   margin: 0 auto;
 }
 
-#sales li {
-  font-family: helvetica;
-  color: #0B568F;
-}
-
 #sales .main_banners img {
 
 }
@@ -89,7 +84,7 @@ header h2{
 }
 
 #sales table {
-  margin-left: 10px;
+  margin-bottom: 50px;
 }
 
 #sales thead {
@@ -100,6 +95,14 @@ header h2{
   padding: 7px;
   border: solid 1px #000;
   color: #2c404c;
+}
+
+#sales footer {
+  clear:both;
+  background: #2c404c;
+  color: #df6063;
+  padding: 30px;
+  bottom: 0;
 }
 
 #home {
